@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype-variations');
+    font-weight: 100 900; /* Supports weights from 100 to 900 */
+    font-style: normal; /* Supports normal and italic */
+}
+@font-face {
+    font-family: 'MartianMono';
+    src: url('./assets/fonts/martian-mono/MartianMono-VariableFont_wdth\,wght.ttf') format('truetype-variations');
+    font-weight: 100 900; /* Supports weights from 100 to 900 */
+    font-style: normal; /* Supports normal and italic */
+}
+
+html,body{
+    margin: 0;
+}
+:root{
+    --bullet:url(data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22blue%22 stroke-width=%222%22><circle cx=%2212%22 cy=%2212%22 r=%2210%22 /></svg>);
+}
+.first-background{
+    background-size: 2vw 2vw;
+    position: relative;
+    background-color: #FAF5F3;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.first-background-image{
+    position: absolute;
+}
+.first-background-glow{
+    position: absolute;
+    right:-25vw;
+    bottom:-10vw;
+}
+.tech-journey-container .first-background-glow{
+    position: absolute;
+    right:-20vw;
+    bottom:-28vw;
+}
+header{
+    display: flex;
+    padding: 2vw 8vw;
+}
+
+header > img{
+    width: 15vw;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5vw;
+    padding: 1vw 8vw;
+}
+.text-container{
+    position: relative;
+}
+.text-container > h1{
+    font-size: 4.25vw;
+    font-weight: 750;
+    margin-bottom: 0vw;
+    line-height: 5vw;
+    font-family: 'MartianMono';
+    background: -webkit-linear-gradient(-51deg, #D58F65, #062630);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-container > p{
+    font-size: 1.4vw;
+    font-family: 'Inter';
+    color: #385159;
+    line-height: 2vw;
+}
+.text-container > button{
+    font-size: 1.4vw;
+    padding: 1vw 2vw;
+    border-radius: 0.5vw;
+    border: 0.2vw solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    background-color: #FFF5EF;
+    text-transform: uppercase;
+    font-family: 'MartianMono';
+    font-weight: 600;
+    color: #062630;
+    letter-spacing: -0.1vw;
+}
+.text-container > button > img{
+    width:2vw;
+}
+.total-testimonial > img{
+    width: 10vw;
+}
+.total-testimonial > div{
+    display: flex;
+    flex-direction: column;
+}
+.total-testimonial > div > img{
+    width: 2vw;
+}
+.total-testimonial{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1vw;
+    margin: 2vw 0;
+    align-items: center;
+}
+.total-testimonial > div > p{
+    margin: 0;
+    font-size: 1vw;
+    font-family: 'MartianMono';
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-container > img{
+    border-radius: 1vw;
+}
+
+.body-container{
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 8vw;
+    padding: 5vw 8vw;
+}
+
+.two-column-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5vw;
+    align-items: center;
+}
+
+.circle{
+    position: absolute;
+    right: 17vw;
+    bottom: 8.5vw;
+}
+
+.text-container h2{
+    font-size: 3.4vw;
+    margin: 0vw;
+    line-height: 5vw;
+    font-family: 'MartianMono';
+    font-weight: 650;
+    line-height: 4vw;
+    color: #062630;
+}
+
+.text-container > ul{
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    font-family: 'Inter';
+    margin:0;
+    color: #385159;
+}
+
+li {
+    padding-inline-start: 1ch;
+    list-style-type: none;
+    position: relative;
+}
+
+li::before{
+    content: "";
+    position: absolute;
+    left: -6%;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    width: 1.8vw;
+    height: 1.8vw; 
+    background-image: url("./assets/images/icon-check.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.logos-tech{
+    position: absolute;
+    bottom: 3vw;
+    left: -6vw;
+}
+
+.tech-journey-container{
+    position: relative;
+    background-color: #FAF5F3;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vw 0;
+}
+
+.tech-journey-container h2{
+    font-size: 3.5vw;
+    line-height: 4vw;
+    margin: 2vw;
+    font-family: 'MartianMono';
+    font-weight: 650;
+    line-height: 4vw;
+    width: 50%;
+    text-align: center;
+    color: #062630;
+}
+
+.tech-journey-steps{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1vw;
+    color: #062630;
+}
+
+.tech-journey-steps-card p:first-child{
+    border: 0.2vw solid;
+    width: 2.5vw;
+    height: 2.54vw;
+    text-align: center;
+    align-content: center;
+    border-radius: 0.3vw;
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+.tech-journey-steps-card p:last-child{
+    width: 18vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+.tech-journey-steps-card{
+    font-family: 'MartianMono';
+    position: relative;
+}
+.tech-journey-steps-card:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    right: 1vw;
+    top: 15%; /* Center vertically */
+    width: 5vw; /* Adjust the size of the SVG */
+    height: 2vw; /* Adjust the size of the SVG */
+    background-image: url("./assets/images/pattern-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.membership-options-container{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    row-gap: 6vw;
+    color: #062630;
+}
+
+.membership-options-container h2{
+    font-size: 3.5vw;
+    line-height: 4vw;
+    margin: 0;
+    font-family: 'MartianMono';
+    font-weight: 650;
+    line-height: 4vw;
+    text-align: center;
+}
+
+.membership-options-container p{
+    font-family: 'Inter';
+    color: #385159;
+}
+.membership-options-container p b{
+    font-family: 'MartianMono';
+    font-size: 2.5vw;
+    color: #062630;
+}
+
+.membership-options-cards{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 2vw;
+    align-items: center;
+}
+
+.membership-options-card{
+    border: 0.1vw solid #E6E1DF;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+    font-family: 'MartianMono';
+    padding: 1.5vw;
+    width: 20vw;
+    height: 22vw;
+}
+
+.membership-options-card:nth-child(2){
+    border: 0.1vw solid #E6E1DF;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+    font-family: 'MartianMono';
+    padding: 3vw 1.5vw;
+    width: 21vw;
+    height: 21vw;
+    background-color: #FAF5F3;
+}
+
+.membership-options-card h3{
+    margin: 0;
+}
+
+.price-section{
+    padding: 2vw 0;
+    border-bottom: 0.1vw solid #E6E1DF;
+    display: flex;
+    align-items: center;
+}
+
+.price-section span:first-child{
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.price-section span:last-child{
+    font-size: 1.25vw;
+    font-family: 'Inter';
+}
+
+.membership-options-cards ul{
+    padding: 0;
+    padding-left: 1vw;
+    margin: 2vw 0;
+    font-size: 1.25vw;
+    font-family: 'Inter';
+}
+.membership-options-cards li{
+    padding-inline-start:1vw;
+}
+.membership-options-cards li::before{
+    width: 1.25vw;
+    height: 1.25vw;
+}
+.membership-options-cards li:not(:last-child) { 
+    margin-bottom: 1vw;  
+}
+.membership-options-cards button{
+    font-size: 1.25vw;
+    padding: 1vw 2vw;
+    border-radius: 0.5vw;
+    border: 0.2vw solid;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    background-color: #FFF5EF;
+    text-transform: uppercase;
+    font-family: 'MartianMono';
+    font-weight: 600;
+    color: #062630;
+    letter-spacing: -0.1vw;
+    width: 100%;
+}
+.testimonial-container{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    row-gap: 2vw;
+    justify-items: center;
+}
+.five-stars{
+    display: flex;
+}
+.five-stars img{
+    width: 2.5vw;
+}
+.five-stars img:not(:last-child){
+    margin-right: 0.5vw;
+}
+.testimonial-container h2{
+    font-size: 2.6vw;
+    line-height: 4vw;
+    margin: 0;
+    font-family: 'MartianMono';
+    font-weight: 650;
+    line-height: 4vw;
+    text-align: center;
+    color: #062630;
+}
+.testimonial-container p{
+    font-size: 1.5vw;
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 500;
+    line-height: 4vw;
+    text-align: center;
+    color: #385159;
+}
+footer{
+    
+}
