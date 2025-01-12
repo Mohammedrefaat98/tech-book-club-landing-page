@@ -137,7 +137,7 @@ header > img{
 .circle{
     position: absolute;
     right: 17vw;
-    bottom: 8.5vw;
+    bottom: 11vw;
 }
 
 .text-container h2{
@@ -392,7 +392,4 @@ li::before{
     line-height: 4vw;
     text-align: center;
     color: #385159;
-}
-footer{
-    
 }
