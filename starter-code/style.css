@@ -148,6 +148,19 @@ header > img{
     font-weight: 650;
     line-height: 4vw;
     color: #062630;
+    position: relative;
+}
+
+.text-container > h2 > span::before{
+    content: "";
+    position: absolute;
+    width: 56%;
+    height: 56%;
+    right: 6.2vw;
+    top: 3.8vw;
+    background-image: url("./assets/images/pattern-circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .text-container > ul{
