@@ -384,6 +384,9 @@ li::before{
 .five-stars img{
     width: 2.5vw;
 }
+.five-stars img{
+    width: 2.5vw;
+}
 .five-stars img:not(:last-child){
     margin-right: 0.5vw;
 }
@@ -405,4 +408,74 @@ li::before{
     line-height: 4vw;
     text-align: center;
     color: #385159;
+}
+footer{
+    background-color: #062630;
+    display: grid;
+    padding-top: 6vw;
+    border-radius: 1vw 1vw 0 0;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 2vw;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-main-content{
+    width: 53vw;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    align-items: center;
+    justify-items: center;
+    row-gap: 4vw;
+}
+
+.footer-main-content h2{
+    font-size: 3.5vw;
+    line-height: 4vw;
+    margin: 0;
+    font-family: 'MartianMono';
+    font-weight: 550;
+    line-height: 5vw;
+    text-align: center;
+    color: #FAF5F3;
+}
+.total-testimonial .five-stars img{
+    width: 1.7vw;
+    margin: 0;
+}
+.footer-main-content .text-container{
+    justify-items: center;
+}
+.footer-main-content .text-container > button{
+    color: white;
+    background-color: rgba(0,0,0,0);
+}
+.footer-main-content .total-testimonial{
+    width: 30vw;
+}
+.footer-main-content .total-testimonial p{
+    font-size: 1vw;
+    letter-spacing: -0.1vw;
+    color: white;
+}
+
+.footer-credit{
+    padding: 1vw 0;
+    border-top: 0.1vw solid #385159;
+    width: 82vw;
+}
+
+.footer-credit{
+    font-size: 1vw;
+    font-family: 'MartianMono';
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content:space-between;
+}
+.footer-credit div img{
+    width: 2vw;
+}
+.footer-credit div img:not(:last-child){
+    margin-right: 2vw;
 }
