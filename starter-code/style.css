@@ -10,7 +10,10 @@
     font-weight: 100 900; /* Supports weights from 100 to 900 */
     font-style: normal; /* Supports normal and italic */
 }
-
+h2, h3{
+    font-weight: 600;
+    font-family: 'MartianMono';
+}
 html,body{
     margin: 0;
 }
@@ -20,23 +23,24 @@ html,body{
 .first-background{
     background-size: 2vw 2vw;
     position: relative;
-    background-color: #FAF5F3;
+    background: url(./assets/images/pattern-light-bg.svg) 100% 100% / cover #FAF5F3;
     overflow-y: hidden;
     overflow-x: hidden;
 }
-.first-background-image{
+
+.first-background::before{
+    content: "";
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/pattern-glow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    left: 20vw;
+    top: 15vw;
 }
-.first-background-glow{
-    position: absolute;
-    right:-25vw;
-    bottom:-10vw;
-}
-.tech-journey-container .first-background-glow{
-    position: absolute;
-    right:-20vw;
-    bottom:-28vw;
-}
+
 header{
     display: flex;
     padding: 2vw 8vw;
@@ -49,14 +53,14 @@ header > img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5vw;
-    padding: 1vw 8vw;
+    padding: 3vw 8vw;
 }
 .text-container{
-    position: relative;
+    align-content: center;
 }
 .text-container > h1{
     font-size: 4.25vw;
-    font-weight: 750;
+    font-weight: 700;
     margin-bottom: 0vw;
     line-height: 5vw;
     font-family: 'MartianMono';
@@ -70,7 +74,7 @@ header > img{
     color: #385159;
     line-height: 2vw;
 }
-.text-container > button{
+button{
     font-size: 1.4vw;
     padding: 1vw 2vw;
     border-radius: 0.5vw;
@@ -109,6 +113,7 @@ header > img{
 .total-testimonial > div > p{
     margin: 0;
     font-size: 1vw;
+    letter-spacing: -0.07vw;
     font-family: 'MartianMono';
 }
 
@@ -144,8 +149,6 @@ header > img{
     font-size: 3.4vw;
     margin: 0vw;
     line-height: 5vw;
-    font-family: 'MartianMono';
-    font-weight: 650;
     line-height: 4vw;
     color: #062630;
     position: relative;
@@ -199,7 +202,7 @@ li::before{
 
 .tech-journey-container{
     position: relative;
-    background-color: #FAF5F3;
+    background: url(./assets/images/pattern-light-bg.svg) 100% 100% / cover #FAF5F3;
     overflow-y: hidden;
     overflow-x: hidden;
     border-radius: 1vw;
@@ -210,12 +213,23 @@ li::before{
     padding: 3vw 0;
 }
 
+.tech-journey-container::before{
+    content: "";
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    background-image: url("./assets/images/pattern-glow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    left: 50vw;
+    top: 0vw;
+}
+
 .tech-journey-container h2{
     font-size: 3.5vw;
     line-height: 4vw;
     margin: 2vw;
-    font-family: 'MartianMono';
-    font-weight: 650;
     line-height: 4vw;
     width: 50%;
     text-align: center;
@@ -274,8 +288,6 @@ li::before{
     font-size: 3.5vw;
     line-height: 4vw;
     margin: 0;
-    font-family: 'MartianMono';
-    font-weight: 650;
     line-height: 4vw;
     text-align: center;
 }
@@ -358,18 +370,6 @@ li::before{
 }
 .membership-options-cards button{
     font-size: 1.25vw;
-    padding: 1vw 2vw;
-    border-radius: 0.5vw;
-    border: 0.2vw solid;
-    align-items: center;
-    justify-content: center;
-    cursor:pointer;
-    background-color: #FFF5EF;
-    text-transform: uppercase;
-    font-family: 'MartianMono';
-    font-weight: 600;
-    color: #062630;
-    letter-spacing: -0.1vw;
     width: 100%;
 }
 .testimonial-container{
@@ -394,8 +394,6 @@ li::before{
     font-size: 2.6vw;
     line-height: 4vw;
     margin: 0;
-    font-family: 'MartianMono';
-    font-weight: 650;
     line-height: 4vw;
     text-align: center;
     color: #062630;
@@ -410,8 +408,7 @@ li::before{
     color: #385159;
 }
 footer{
-    background-color: #062630;
-    display: grid;
+    background: url(./assets/images/pattern-light-bg.svg) 100% 100% / cover rgb(6, 38, 48);
     padding-top: 6vw;
     border-radius: 1vw 1vw 0 0;
     grid-template-rows: repeat(2,auto);
@@ -433,8 +430,6 @@ footer{
     font-size: 3.5vw;
     line-height: 4vw;
     margin: 0;
-    font-family: 'MartianMono';
-    font-weight: 550;
     line-height: 5vw;
     text-align: center;
     color: #FAF5F3;
@@ -450,12 +445,11 @@ footer{
     color: white;
     background-color: rgba(0,0,0,0);
 }
+
 .footer-main-content .total-testimonial{
     width: 30vw;
 }
 .footer-main-content .total-testimonial p{
-    font-size: 1vw;
-    letter-spacing: -0.1vw;
     color: white;
 }
 
