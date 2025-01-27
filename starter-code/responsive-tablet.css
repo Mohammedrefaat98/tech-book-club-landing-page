@@ -1,0 +1,162 @@
+@media (max-width:768px) {
+    header > img{
+        width: 25vw;
+    }
+    .first-background::before{
+        top: 60vw;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 5vw;
+        padding-bottom: 5vw;
+    }
+    .two-column-container > .text-container{
+        grid-area: text-container;
+    }
+    .two-column-container > .image-area{
+        grid-area: image-container;
+    }
+    .text-container > h1{
+        font-size: 8vw;
+        line-height: normal;
+    }
+    .text-container h2, .membership-options-container h2{
+        font-size: 6vw;
+        line-height: 7vw;
+        color: #062630;
+    }
+
+    .text-container > ul {
+        font-size: 2.3vw;
+    }
+
+    li::before {
+        width: 2.3vw;
+        height: 2.3vw;
+    }
+    
+    .text-container > p{
+        font-size: 2.3vw;
+        line-height: normal;
+    }
+
+    .logos-tech {
+        position: absolute;
+        bottom: 3vw;
+        right: 6vw;
+        left: unset;
+    }
+
+    button {
+        font-size: 2vw;
+        padding: 2vw 3vw;
+        border-radius: 1vw;
+    }
+    button > img{
+        width:3vw;
+    }
+    .total-testimonial > img{
+        width: 15vw;
+    }
+    .total-testimonial .five-stars img {
+        width: 3vw;
+        margin: 0;
+    }
+    .total-testimonial > div > p{
+        margin: 0;
+        font-size: 1.5vw;
+        letter-spacing: -0.07vw;
+        font-family: 'MartianMono';
+    }
+    .two-column-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "text-container"
+        "image-container";
+    }
+
+    .tech-journey-container{
+        display: none;
+    }
+
+    .membership-options-container {
+        justify-items: left;
+        row-gap: 6vw;
+        color: #062630;
+        column-gap: 2vw;
+    }
+
+    .membership-options-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+        row-gap: 2vw;
+        align-items: center;
+        justify-self: normal;
+    }
+
+    .membership-options-card {
+        border: 0.1vw solid #E6E1DF;
+        border-radius: 0.5vw;
+        font-size: 3vw;
+        font-family: 'MartianMono';
+        padding: 3vw;
+        width: auto;
+        height: fit-content;
+    }
+
+    .membership-options-card:nth-child(2){
+        border: 0.1vw solid #E6E1DF;
+        border-radius: 0.5vw;
+        font-size: 3vw;
+        font-family: 'MartianMono';
+        padding: 3vw;
+        width: auto;
+        height: fit-content;
+    }
+
+    .price-section span:first-child {
+        font-size: 3vw;
+    }
+
+    .price-section span:last-child {
+        font-size: 1.5vw;
+    }
+
+    .membership-options-cards ul {
+        font-size: 2vw;
+    }
+
+    .membership-options-cards li::before {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .membership-options-cards button {
+        font-size: 2vw;
+    }
+
+    .testimonial-container {
+        justify-items: left;
+    }
+
+    .testimonial-container h2 {
+        text-align: unset;
+        font-size: 4vw;
+        line-height: unset;
+    }
+
+    .five-stars img {
+        width: 5vw;
+    }
+
+    .testimonial-container p {
+        font-size: 2.3vw;
+    }
+
+    .footer-main-content .total-testimonial {
+        width: 50vw;
+    }
+}

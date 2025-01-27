@@ -4,26 +4,30 @@
     font-weight: 100 900; /* Supports weights from 100 to 900 */
     font-style: normal; /* Supports normal and italic */
 }
+
 @font-face {
     font-family: 'MartianMono';
     src: url('./assets/fonts/martian-mono/MartianMono-VariableFont_wdth\,wght.ttf') format('truetype-variations');
     font-weight: 100 900; /* Supports weights from 100 to 900 */
     font-style: normal; /* Supports normal and italic */
 }
+
 h2, h3{
     font-weight: 600;
     font-family: 'MartianMono';
 }
+
 html,body{
     margin: 0;
 }
+
 :root{
     --bullet:url(data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22blue%22 stroke-width=%222%22><circle cx=%2212%22 cy=%2212%22 r=%2210%22 /></svg>);
 }
+
 .first-background{
-    background-size: 2vw 2vw;
     position: relative;
-    background: url(./assets/images/pattern-light-bg.svg) 100% 100% / cover #FAF5F3;
+    background: url(./assets/images/pattern-light-bg.svg) 100% 100% / contain #FAF5F3;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -90,7 +94,7 @@ button{
     color: #062630;
     letter-spacing: -0.1vw;
 }
-.text-container > button > img{
+button > img{
     width:2vw;
 }
 .total-testimonial > img{
@@ -100,12 +104,9 @@ button{
     display: flex;
     flex-direction: column;
 }
-.total-testimonial > div > img{
-    width: 2vw;
-}
 .total-testimonial{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: auto 1fr;
     column-gap: 1vw;
     margin: 2vw 0;
     align-items: center;
@@ -151,23 +152,25 @@ button{
     line-height: 5vw;
     line-height: 4vw;
     color: #062630;
-    position: relative;
 }
 
+.text-container > h2 > span{
+    position: relative;
+}
 .text-container > h2 > span::before{
     content: "";
     position: absolute;
-    width: 56%;
-    height: 56%;
-    right: 6.2vw;
-    top: 3.8vw;
+    width: 115%;
+    height: 115%;
+    left: -1vw;
+    top: -0.2vw;
     background-image: url("./assets/images/pattern-circle.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .text-container > ul{
-    padding: 1vw 2vw;
+    padding-left: 3vw;
     font-size: 1.5vw;
     font-family: 'Inter';
     margin:0;
@@ -175,7 +178,6 @@ button{
 }
 
 li {
-    padding-inline-start: 1ch;
     list-style-type: none;
     position: relative;
 }
@@ -183,7 +185,7 @@ li {
 li::before{
     content: "";
     position: absolute;
-    left: -6%;
+    left: -3vw;
     top: 50%; /* Center vertically */
     transform: translateY(-50%);
     width: 1.8vw;
@@ -191,7 +193,6 @@ li::before{
     background-image: url("./assets/images/icon-check.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    
 }
 
 .logos-tech{
@@ -352,14 +353,10 @@ li::before{
 }
 
 .membership-options-cards ul{
-    padding: 0;
-    padding-left: 1vw;
+    padding: 0 3vw;
     margin: 2vw 0;
     font-size: 1.25vw;
     font-family: 'Inter';
-}
-.membership-options-cards li{
-    padding-inline-start:1vw;
 }
 .membership-options-cards li::before{
     width: 1.25vw;
@@ -380,9 +377,6 @@ li::before{
 }
 .five-stars{
     display: flex;
-}
-.five-stars img{
-    width: 2.5vw;
 }
 .five-stars img{
     width: 2.5vw;
