@@ -159,4 +159,8 @@
     .footer-main-content .total-testimonial {
         width: 50vw;
     }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
 }
