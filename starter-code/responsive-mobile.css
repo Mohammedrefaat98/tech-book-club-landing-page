@@ -1,0 +1,121 @@
+@media (max-width:375px) {
+    header {
+        padding: 4vw 4vw;
+        padding-bottom: 0;
+    }
+    header > img {
+        width: 45vw;
+    }
+    .container {
+        padding: 4vw 4vw;
+    }
+    .text-container > h1 {
+        font-size: 10vw;
+    }
+    .text-container > p {
+        font-size: 5.25vw;
+    }
+    button {
+        font-size: 4vw;
+        padding: 5vw 3vw;
+        border-radius: 1vw;
+        border-radius: 2vw;
+        width: -webkit-fill-available;
+        border: 0.75vw solid;
+    }
+    button > img {
+        width: 6vw;
+    }
+    .total-testimonial > img {
+        width: 28vw;
+    }
+    .total-testimonial .five-stars img {
+        width: 6vw;
+        margin: 0;
+    }
+    .total-testimonial > div > p {
+        margin: 0;
+        font-size: 3.5vw;
+    }
+    .text-container h2, .membership-options-container h2 {
+        font-size: 8vw;
+        line-height: normal;
+    }
+    .text-container > ul {
+        font-size: 5.25vw;
+        padding-left: 8vw;
+    }
+    .body-container {
+        padding: 4vw 4vw;
+    }
+    li::before {
+        width: 5vw;
+        height: 5vw;
+        left: -8vw;
+    }
+    .membership-options-cards {
+        grid-template-columns: 1fr;
+        row-gap: 2vw;
+        align-items: center;
+        justify-self: normal;
+    }
+    .membership-options-cards button {
+        font-size: 4vw;
+    }
+    .membership-options-card {
+        border: 0.5vw solid #E6E1DF;
+        border-radius: 1vw;
+        font-size: 5vw;
+        padding: 5vw;
+    }
+
+    .membership-options-card:nth-child(2){
+        border: 0.1vw solid #E6E1DF;
+        border-radius: 1vw;
+        font-size: 5vw;
+        padding: 3vw;
+    }
+
+    .price-section span:first-child {
+        font-size: 5vw;
+    }
+
+    .price-section span:last-child {
+        font-size: 3vw;
+    }
+
+    .membership-options-cards ul {
+        font-size: 4vw;
+        padding: 5vw 0;
+        padding-left: 6vw;
+    }
+
+    .membership-options-cards li::before {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .membership-options-cards button {
+        font-size: 4vw;
+    }
+
+    .membership-options-cards li::before {
+        width: 4vw;
+        height: 4vw;
+        left:-6vw;
+    }
+
+    .testimonial-container h2 {
+        text-align: unset;
+        font-size: 6vw;
+        line-height: unset;
+    }
+    .testimonial-container p {
+        font-size: 4vw;
+        padding: 4vw 0;
+    }
+
+    .five-stars img {
+        width: 8vw;
+    }
+}

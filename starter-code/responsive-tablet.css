@@ -25,6 +25,7 @@
         font-size: 6vw;
         line-height: 7vw;
         color: #062630;
+        text-align: unset;
     }
 
     .text-container > ul {
