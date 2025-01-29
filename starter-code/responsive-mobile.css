@@ -118,4 +118,42 @@
     .five-stars img {
         width: 8vw;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-main-content {
+        width: 90%;
+    }
+    .footer-main-content h2 {
+        font-size: 8vw;
+        line-height: normal;
+    }
+
+    .footer-main-content .total-testimonial {
+        width: fit-content;
+    }
+
+    .footer-credit{
+        padding: 1vw 0;
+        border-top: 0.1vw solid #385159;
+        width: 90%;
+        padding: 1vw 5%;
+        margin-top: 8vw;
+    }
+    
+    .footer-credit{
+        font-size: 3vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-credit div img {
+        width: 4vw;
+    }
+    .footer-credit div {
+        margin: 2vw 0;
+    }
 }

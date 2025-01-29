@@ -164,4 +164,29 @@
         display: flex;
         flex-direction: column;
     }
+
+    .footer-main-content {
+        width: 80vw;
+    }
+    .footer-main-content h2 {
+        font-size: 6vw;
+        line-height: normal;
+    }
+
+    .footer-credit{
+        padding: 1vw 0;
+        border-top: 0.1vw solid #385159;
+        width: 90%;
+        padding: 1vw 5%
+    }
+    
+    .footer-credit{
+        font-size: 2vw;
+    }
+    .footer-credit div img {
+        width: 3vw;
+    }
+    .footer-credit div {
+        margin: 2vw 0;
+    }
 }
