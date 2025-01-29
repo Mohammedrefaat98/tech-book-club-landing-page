@@ -164,7 +164,6 @@
         display: flex;
         flex-direction: column;
     }
-<<<<<<< HEAD
 
     .footer-main-content {
         width: 80vw;
@@ -190,6 +189,4 @@
     .footer-credit div {
         margin: 2vw 0;
     }
-=======
->>>>>>> b5dc65a354662bddba13f4e12e0802a6ce7c38c4
 }
